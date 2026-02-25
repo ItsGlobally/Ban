@@ -6,6 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import top.itsglobally.ban.command.BanCommand;
 import top.itsglobally.ban.command.UnbanCommand;
 import top.itsglobally.ban.data.Config;
+import top.itsglobally.ban.listener.Listener;
 import top.itsglobally.ban.storage.BanStorage;
 import top.itsglobally.ban.storage.impl.SqliteStorage;
 
@@ -30,6 +31,7 @@ public final class Ban extends JavaPlugin {
         else storage = new SqliteStorage();
         storage.connect();
         setupCommand();
+        getServer().getPluginManager().registerEvents(new Listener(), this);
     }
 
     public void setupCommand() {
