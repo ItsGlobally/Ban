@@ -2,3 +2,8 @@ name: Ban
 version: '1.0-SNAPSHOT'
 main: top.itsglobally.ban.Ban
 api-version: '1.21'
+commands:
+  ban:
+    permission: ban.command.ban
+  unban:
+    permission: ban.command.unban

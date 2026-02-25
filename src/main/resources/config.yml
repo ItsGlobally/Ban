@@ -1,0 +1,23 @@
+storage:
+  # the storage method. only supported mysql and sqlite. it will use sqlite by default.
+  method: sqlite
+
+  # settings below (address, username, password) will not affect if you use sqlite as the storage method.
+
+  # address of the database. you can put ip or ip:port like localhost:3306.
+  # if port is not specified, it will be connected to ip:3306 by default.
+  address: localhost
+  # the database to storage data.
+  database: kanade
+  # the username you want to connect to database with.
+  username: root
+  # the password of the username that specified above.
+  password: KanadeSoCute
+
+messages:
+  # the messages.
+  # placeholders
+  # - {reason}: the reason why the player is banned.
+  # - {time}: not available for punishes with no expiring time. the time when the player will be unbanned.
+  ban: "&cYou are banned!\nReason: {reason}\nExpiring at: {time}"
+  ban_perm: "&cYou are banned!\nReason: {reason}"

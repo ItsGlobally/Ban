@@ -1,6 +1,6 @@
 package top.itsglobally.ban.data;
 
-public class Mute {
+public class MuteData {
     private String playerUuid;
     private String playerName;
     private String reason;
